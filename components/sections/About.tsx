@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowUpRight } from 'lucide-react'
+import { openEngineeringChat } from '@/lib/chat-events'
 
 export function About() {
 	return (
@@ -18,9 +19,9 @@ export function About() {
 						Currently working as a Full Stack Developer, I combine engineering fundamentals with a curiosity for machine
 						learning and the web platforms that shape how people build and use products.
 					</p>
-					<a className="arrow-link" href="#contact">
+					<button type="button" className="arrow-link" onClick={() => openEngineeringChat()}>
 						More about me <ArrowUpRight size={17} />
-					</a>
+					</button>
 				</div>
 			</div>
 		</section>

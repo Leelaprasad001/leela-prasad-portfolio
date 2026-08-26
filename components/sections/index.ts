@@ -1,6 +1,7 @@
 export { About } from './About'
 export { Contact } from './Contact'
 export { Experience } from './Experience'
+export { EngineeringIntelligence } from './EngineeringIntelligence'
 export { Footer } from './Footer'
 export { Focus } from './Focus'
 export { Header } from './Header'

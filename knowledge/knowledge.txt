@@ -1,0 +1,277 @@
+# Engineering Intelligence — Portfolio Knowledge Base
+
+## Profile
+
+Name: Leela Prasad Bantu
+
+Professional Title: AI Full Stack Developer – Staff Engineer
+
+Professional Focus:
+- Enterprise AI and FinTech platforms
+- Backend engineering and scalable API development
+- AI-powered applications and intelligent risk assessment
+- Retrieval-Augmented Generation (RAG)
+- Large Language Model (LLM) integration
+- Cloud-native distributed systems
+- Secure, asynchronous, and high-performance systems
+- Modern system design and enterprise security
+
+Location: Hyderabad, India
+
+## Professional Experience
+
+### Recordent Private Limited
+
+Role: AI Full Stack Developer – Staff Engineer
+Period: December 2024 – Present
+Location: Hyderabad, India
+
+Overview:
+- Leading enterprise AI and FinTech platform development across multiple enterprise platforms.
+- Leading scalable AI and full-stack solutions with modern architecture and engineering practices.
+- Mentoring team members on architecture, coding standards, and delivery best practices.
+
+#### Credit Risk Service
+
+Technology: Node.js, NestJS, TypeScript, MySQL, TypeORM, Jest, Azure
+
+Responsibilities and Contributions:
+- Owned the architecture and development of the Credit Risk Service enabling AI-driven risk assessment.
+- Architected a secure, modular backend with authentication, logging, caching, encryption, and REST APIs.
+- Built distributed workflows using asynchronous processing, queues, idempotency, and resilient integrations.
+- Implemented secure APIs, request controls, rate limiting, whitelisting, and asynchronous processing.
+- Delivered scalable microservice integrations with third-party systems to improve reliability and interoperability.
+
+#### Recordent AI Chatbot
+
+Technology: Python, FastAPI, PostgreSQL, pgvector, DeepEval, AWS
+
+Responsibilities and Contributions:
+- Developed an enterprise RAG chatbot for AI-powered support and intelligent knowledge retrieval.
+- Built document ingestion and embedding lifecycle workflows.
+- Implemented semantic search and chat session management.
+- Developed secure administration APIs.
+- Implemented LLM evaluation using DeepEval, including faithfulness, correctness, and hallucination metrics.
+
+#### Recordent MFI Credit Registry
+
+Technology: Node.js, Express.js, Angular, MySQL, Azure
+
+Responsibilities and Contributions:
+- Developed a CIBIL-like credit registry for Microfinance Institutions and credit bureau operations.
+- Built queue-driven data pipelines for bulk uploads, validation, processing, and discrepancy reporting.
+- Developed secure lender and administrator portals with RBAC, dashboards, reporting, and audit logging.
+- Delivered ERP integrations and payment workflows to streamline business processes and operational efficiency.
+
+#### AI Risk Assessment Platform
+
+- Leading development of an AI-powered Risk Assessment Platform for faster, data-driven business decisions.
+- Working with alternative data, decision models, and LLM-based capabilities for credit risk assessment.
+- Building scalable integrations with third-party systems to improve reliability and interoperability.
+
+#### Production Engineering and Security
+
+- Resolved critical production issues to minimize downtime and maintain uninterrupted business operations.
+- Resolved high-priority VAPT findings from the 2025 and 2026 audits.
+- Implemented structured observability, logging, and diagnostics to improve production issue resolution.
+- Worked with Azure services including APIM, Functions Apps, VMs, Service Bus, and Azure Storage.
+- Worked with CI/CD and cloud infrastructure across Azure and AWS.
+
+### Indian Institute of Petroleum and Energy
+
+Role: Full Stack Developer Intern
+Period: November 2023 – February 2024
+Location: Visakhapatnam, India
+
+Bill Management System:
+- Developed a full-stack Bill Management System using React.js, Spring Boot, and PostgreSQL.
+- Implemented RESTful APIs and secure data handling.
+- Performed load testing using JMeter 5.6 and API testing using Postman.
+- Used Git for version control.
+- Optimized frontend performance and collaborated with UI/UX and SEO teams, achieving a 95% Lighthouse score.
+- Enhanced security using JWT authentication, secure HTTP APIs, and Content Security Policy (CSP).
+- Led a team of interns, coordinated development tasks, and delivered the project within the three-month internship.
+
+## Selected Projects
+
+### CropQ — Empowering Smarter Agriculture with AI-Driven Insights
+
+Period: October 2024 – November 2024
+
+Technology:
+- MERN
+- Tailwind CSS
+- Python
+- Machine Learning
+- Deep Learning
+- NLP
+- FastAPI
+
+Project:
+- Built an AI agriculture platform for crop identification, recommendations, disease detection, and related agricultural insights.
+- Achieved up to 90% accuracy for crop identification, recommendations, and disease analysis.
+- Integrated an AI chatbot using Llama 3.
+- Added weather analysis and intelligence.
+- Implemented responsive UI with dark/light modes and animations.
+- Built a secured backend with MVC architecture, error handling, and logging.
+- Web scraped 500 crop-price records.
+- Trained machine learning models on crop datasets, including a CNN with 85% accuracy and a Decision Tree with 90% accuracy.
+
+### AI Powered Smart Mall Management System
+
+Status: Patent Accepted
+Period: August 2023 – November 2023
+
+Technology:
+- MERN
+- Material UI
+- Python
+- OpenCV
+- Deep Learning
+- FastAPI
+
+Project:
+- Built an AI-based mall management platform for customer analytics, tracking, inventory monitoring, and sales analysis.
+- Reported business growth impact of up to 60%.
+- Engineered a robust backend using multithreading to process multiple real-time surveillance data streams simultaneously.
+- Integrated YOLOv8 for real-time face detection.
+- Stored face features in a database for customer tracking and analysis.
+- Built a JWT-authenticated analytics dashboard for customer and tracking data.
+- Improved monitoring/performance efficiency by up to 90%.
+
+## Technical Skills
+
+### Programming Languages
+- JavaScript
+- TypeScript
+- Java
+- Python
+- C++
+- SQL
+
+### Frameworks and Libraries
+- NestJS
+- Node.js
+- Next.js
+- React
+- Angular
+- Express.js
+- Spring Boot
+- FastAPI
+- Cypress
+
+### AI and Machine Learning
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Amazon Bedrock
+- DeepEval
+- FAISS
+- pgvector
+
+### Databases and Data
+- MySQL
+- PostgreSQL
+- MongoDB
+- Redis
+
+### Cloud and DevOps
+- AWS
+- Azure
+- Docker
+- Git
+- Linux
+- Azure Service Bus
+- Azure Storage
+- Azure API Management (APIM)
+
+### Core Engineering Concepts
+- System Design
+- Distributed Systems
+- REST APIs
+- Microservices
+- Object-Oriented Programming (OOP)
+- Data Structures and Algorithms (DSA)
+- Computer Networks
+- Asynchronous Processing
+- Queue-Based Processing
+- API Security
+- Authentication and Authorization
+- Observability and Logging
+
+### AI-Assisted Development Tools
+- GitHub Copilot
+- Cursor
+- Claude Code
+
+## Education
+
+### GMR Institute of Technology, Rajam
+
+Degree: Bachelor of Technology in Computer Science and Engineering
+Period: July 2021 – April 2024
+CGPA: 9.02 / 10
+
+### Andhra Polytechnic, Kakinada
+
+Degree: Diploma in Computer Science and Engineering
+Period: June 2018 – April 2021
+Percentage: 93.51%
+
+## Achievements
+
+- Secured 1st place in Webathon 2023 at the inter-collegiate level.
+- Secured 1st place in Deep Datathon 2023 at the inter-collegiate level.
+- Finalist for Innovative Project Design Contest.
+- Achieved 10th place in the 2024 Data Analyst Challenge conducted by Newton School.
+
+## Certifications
+
+- Full Stack Developer — IIPE
+- Full Stack Engineer — Pro5AI
+- Web Applications Technologies
+- Google Data Analytics — Google
+- MERN Essential Training
+- Learning Next.js
+
+## Publications
+
+- “An Advanced Real-Time Job Recommendation System and Resume Analyser” — IEEE International Conference.
+- “Weeds Detection Using Semi-Supervised Learning For Precision Agriculture” — IJARSCT.
+
+## Leadership and Responsibilities
+
+### Recordent
+- AI Full Stack Developer – Staff Engineer.
+- Leading enterprise AI full-stack product development across multiple platforms.
+- Mentoring team members on architecture, coding standards, and delivery practices.
+
+### IIPE
+- Team Lead.
+- Led a full-stack development team and coordinated project planning, execution, and delivery.
+
+### STEPCONE 2023
+- Co-Team Lead.
+- Managed development activities and ensured project execution within timelines.
+
+## Professional Links
+
+Portfolio: leelaprasadbantu.vercel.app
+LinkedIn: leela-prasad-bantu
+GitHub: Leelaprasad001
+LeetCode: Leelaprasad001
+GeeksforGeeks: leelaprasad1607
+
+## Grounding Rules for AI Assistant
+
+Use this document as the authoritative professional knowledge source.
+
+The assistant should:
+- Answer questions using only information supported by this knowledge base.
+- Never invent employment history, dates, projects, skills, achievements, education, certifications, or responsibilities.
+- When the knowledge base does not contain an answer, clearly state that the information is not available in the portfolio knowledge.
+- Prefer specific project and experience details when answering technical questions.
+- Distinguish between current Recordent work, previous IIPE experience, and personal/academic projects.
+- Treat reported accuracy, growth, and performance percentages as claims from the portfolio source and do not extrapolate beyond them.

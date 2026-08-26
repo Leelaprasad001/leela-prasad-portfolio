@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
+import { openEngineeringChat } from '@/lib/chat-events'
 
 export function Hero() {
 	return (
@@ -23,9 +24,13 @@ export function Hero() {
 					<a className="button button-dark" href="#projects">
 						Explore my work <ArrowUpRight size={17} />
 					</a>
-					<a className="button button-white" href="#contact">
+					<button
+						type="button"
+						className="button button-white"
+						onClick={() => openEngineeringChat()}
+					>
 						Start a conversation <ArrowDownRight size={17} />
-					</a>
+					</button>
 				</div>
 			</div>
 		</section>

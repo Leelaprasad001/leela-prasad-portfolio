@@ -6,7 +6,7 @@ export function Contact() {
 	return (
 		<section className="contact-section container" id="contact">
 			<div className="contact-inner">
-				<div className="section-label">06 / CONTACT</div>
+				<div className="section-label">07 / CONTACT</div>
 				<h2>
 					Have an idea?
 					<br />

@@ -9,13 +9,14 @@ import { Focus } from './sections/Focus'
 import { Footer } from './sections/Footer'
 import { Header } from './sections/Header'
 import { Hero } from './sections/Hero'
+import { EngineeringIntelligence } from './sections/EngineeringIntelligence'
 import { Marquee } from './sections/Marquee'
 import { Projects } from './sections/Projects'
 import { Services } from './sections/Services'
 import { Skills } from './sections/Skills'
 import { announcementPhrases, marqueeItems, nav, projects, services, skills, timeline } from './sections/data'
 
-export default function App() {
+export default function App({ showChatbot = true }) {
   const [open, setOpen] = useState(false)
   const [expanded, setExpanded] = useState(0)
   const [projectStart, setProjectStart] = useState(0)
@@ -42,6 +43,14 @@ export default function App() {
     window.localStorage.setItem('theme', theme)
   }, [theme])
 
+  useEffect(() => {
+    document.documentElement.dataset.showChatbot = showChatbot ? '1' : '0'
+
+    return () => {
+      delete document.documentElement.dataset.showChatbot
+    }
+  }, [showChatbot])
+
   return (
     <div className="site-shell">
       <Header
@@ -65,6 +74,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      {showChatbot && <EngineeringIntelligence />}
     </div>
   )
 }

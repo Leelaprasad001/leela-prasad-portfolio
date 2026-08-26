@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowUpRight, Menu, Moon, Sun, X } from 'lucide-react'
+import { openEngineeringChat } from '@/lib/chat-events'
 
 type HeaderProps = {
   nav: readonly string[]
@@ -44,9 +45,16 @@ export function Header({ nav, announcementPhrases, open, theme, onToggle, onClos
             <button className="theme-toggle" aria-label="Toggle dark mode" onClick={onThemeToggle}>
               {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
-            <a className="nav-cta" href="#contact">
+            <button
+              className="nav-cta"
+              type="button"
+              onClick={() => {
+                openEngineeringChat()
+                onClose()
+              }}
+            >
               Let&apos;s talk <ArrowUpRight size={16} />
-            </a>
+            </button>
             <button className="menu-button" aria-label={open ? 'Close menu' : 'Open menu'} onClick={onToggle}>
               {open ? <X /> : <Menu />}
             </button>
