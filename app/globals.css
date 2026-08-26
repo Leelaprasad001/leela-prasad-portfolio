@@ -716,7 +716,7 @@ em { font-family: var(--font-instrument), Georgia, serif; font-weight: 400; }
 @media (max-width: 800px) {
 	.hero {
 		margin-top: 0 !important;
-		padding-top: 92px !important;
+		padding-top: 72px !important;
 	}
 }
 
@@ -1931,5 +1931,120 @@ em { font-family: var(--font-instrument), Georgia, serif; font-weight: 400; }
 
 	.intelligence-form-row {
 		flex-wrap: wrap;
+	}
+}
+
+/* Final nav pin + responsive sizing */
+.nav-wrap {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	width: 100% !important;
+	z-index: 1300 !important;
+}
+
+.nav-shell {
+	position: relative !important;
+	top: 0 !important;
+	z-index: 1301 !important;
+}
+
+.nav {
+	height: 60px !important;
+}
+
+.nav-inner {
+	height: 60px !important;
+	gap: 16px !important;
+}
+
+.brand {
+	flex-shrink: 0;
+	white-space: nowrap;
+	font-size: 12px !important;
+}
+
+.brand span:last-child {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.brand-name {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.desktop-links {
+	gap: 24px !important;
+}
+
+.nav-cta {
+	margin-left: 12px !important;
+	padding: 8px 14px !important;
+	font-size: 11px !important;
+	line-height: 1.2;
+	min-height: 38px;
+}
+
+@media (max-width: 1280px) and (min-width: 801px) {
+	.nav {
+		height: 56px !important;
+	}
+
+	.nav-inner {
+		height: 56px !important;
+		padding: 0 12px !important;
+		gap: 12px !important;
+	}
+
+	.brand {
+		font-size: 11px !important;
+	}
+
+	.desktop-links {
+		gap: 16px !important;
+		font-size: 11px !important;
+	}
+
+	.theme-toggle {
+		width: 34px !important;
+		height: 34px !important;
+		margin-left: 6px !important;
+	}
+
+	.nav-cta {
+		padding: 7px 12px !important;
+		min-height: 34px;
+		font-size: 10.5px !important;
+		margin-left: 8px !important;
+	}
+}
+
+@media (max-width: 800px) {
+	.nav-wrap {
+		position: sticky !important;
+	}
+}
+
+/* Final hero alignment below pinned navbar */
+.hero {
+	margin-top: 0 !important;
+	padding-top: 136px !important;
+	min-height: 100vh !important;
+	min-height: 100dvh !important;
+}
+
+@media (max-width: 1280px) and (min-width: 801px) {
+	.hero {
+		margin-top: 0 !important;
+		padding-top: 120px !important;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero {
+		margin-top: 0 !important;
+		padding-top: 16px !important;
 	}
 }

@@ -32,7 +32,7 @@ export function Header({ nav, announcementPhrases, open, theme, onToggle, onClos
           <div className="nav-inner">
             <a className="brand" href="#top" onClick={onClose}>
               <span className="brand-mark">LP</span>
-              <span>Leela Prasad Bantu</span>
+              <span className="brand-name">Leela Prasad Bantu</span>
             </a>
             <div className="desktop-links">
               {nav.map((item) => (
