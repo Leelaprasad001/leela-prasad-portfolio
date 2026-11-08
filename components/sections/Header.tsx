@@ -10,7 +10,7 @@ type HeaderProps = {
   theme: 'light' | 'dark'
   onToggle: () => void
   onClose: () => void
-  onThemeToggle: () => void
+  onThemeToggle: (event?: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 export function Header({ nav, announcementPhrases, open, theme, onToggle, onClose, onThemeToggle }: HeaderProps) {

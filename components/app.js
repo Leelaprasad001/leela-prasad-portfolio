@@ -1,7 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { flushSync } from 'react-dom'
 
+import { Motion } from './motion'
 import { About } from './sections/About'
 import { Contact } from './sections/Contact'
 import { Experience } from './sections/Experience'
@@ -51,8 +53,41 @@ export default function App({ showChatbot = true }) {
     }
   }, [showChatbot])
 
+  // Theme switch spreads out as a circle from the toggle button (View Transitions API).
+  // Falls back to an instant switch where unsupported or when reduced motion is preferred.
+  const toggleTheme = (event) => {
+    const next = theme === 'light' ? 'dark' : 'light'
+    const root = document.documentElement
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    if (!document.startViewTransition || reduceMotion) {
+      setTheme(next)
+      return
+    }
+
+    const rect = event?.currentTarget?.getBoundingClientRect?.()
+    const x = rect ? rect.left + rect.width / 2 : window.innerWidth - 48
+    const y = rect ? rect.top + rect.height / 2 : 48
+    const radius = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y))
+
+    const transition = document.startViewTransition(() => {
+      flushSync(() => setTheme(next))
+      root.classList.toggle('theme-dark', next === 'dark')
+    })
+
+    transition.ready
+      .then(() => {
+        root.animate(
+          { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+          { duration: 650, easing: 'cubic-bezier(0.65, 0, 0.35, 1)', pseudoElement: '::view-transition-new(root)' },
+        )
+      })
+      .catch(() => {})
+  }
+
   return (
     <div className="site-shell">
+      <Motion />
       <Header
         nav={nav}
         announcementPhrases={announcementPhrases}
@@ -60,7 +95,7 @@ export default function App({ showChatbot = true }) {
         theme={theme}
         onToggle={() => setOpen(!open)}
         onClose={() => setOpen(false)}
-        onThemeToggle={() => setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))}
+        onThemeToggle={toggleTheme}
       />
       <main id="top">
         <Hero />

@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { Inter, Instrument_Serif } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import './motion.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const instrumentSerif = Instrument_Serif({ subsets: ['latin'], variable: '--font-instrument', weight: '400' })
